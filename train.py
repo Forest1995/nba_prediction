@@ -21,10 +21,10 @@ print(df)
 
 dataX = df.drop(["win", "date", "home", "away"], axis=1)
 dataY = df["win"]
-train_x = np.array(dataX)[::2]  # train set
+train_x = np.array(dataX)[::2]  # train set     even number of data
 print(train_x)
 train_y = np.array(dataY)[::2]
-test_x = np.array(dataX)[1::2]  # test set
+test_x = np.array(dataX)[1::2]  # test set      odd number of data
 print(test_x)
 test_y = np.array(dataY)[1::2]
 
